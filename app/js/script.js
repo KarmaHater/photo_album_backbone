@@ -1,0 +1,1 @@
+var app=app||{},ENTER_KEY=13;$(function(){new app.AppView});var app=app||{},WorkSpace=Backbone.Router.extend({routes:{"*filter":"setFilter"},setFilter:function(a){a&&(a=a.trim()),app.TodoFilter=a||"",app.Todos.trigger("filter")}});app.TodoRouter=new WorkSpace,Backbone.history.start();
