@@ -1,6 +1,6 @@
 var app = app || {};
 app.PictureView = Backbone.View.extend({
-  tagname: 'li',
+  tagName: 'li',
   className: 'entry',
   template: Handlebars.compile($('#photo-temp').html()),
   render: function() {
